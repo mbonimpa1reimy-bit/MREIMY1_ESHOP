@@ -1,0 +1,175 @@
+body{
+    font-family: Arial;
+    padding:20px;
+    
+}
+
+.card{
+
+width:220px;
+
+padding:15px;
+
+border-radius:10px;
+
+box-shadow:0 0 10px gray;
+
+display:inline-block;
+
+margin:10px;
+
+text-align:center;
+
+}
+
+.card img{
+
+border-radius:8px;
+
+}
+
+button{
+
+margin:5px;
+
+padding:8px;
+
+cursor:pointer;
+
+}
+
+
+
+
+
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:#2196f3;
+
+padding:15px;
+
+color:white;
+
+}
+
+.menu{
+
+position:relative;
+
+}
+
+.menu button{
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+.menu-content{
+
+display:none;
+
+position:absolute;
+
+right:0;
+
+background:white;
+
+min-width:180px;
+
+box-shadow:0 0 10px gray;
+
+border-radius:8px;
+
+overflow:hidden;
+
+}
+
+.menu-content a{
+
+display:block;
+
+padding:12px;
+
+text-decoration:none;
+
+color:black;
+
+}
+
+.menu-content a:hover{
+
+background:#f0f0f0;
+
+}
+
+.show{
+
+display:block;
+
+}
+//.dark-mode{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+.dark-mode .topbar{
+
+background:#111;
+
+}
+
+.dark-mode .menu-content{
+
+background:#333;
+
+}
+
+.dark-mode .menu-content a{
+
+color:white;
+
+}
+
+.dark-mode .menu-content a:hover{
+
+background:#555;
+
+}
+
+
+
+
+.contact-info{
+
+    border-top:1px solid #ddd;
+
+    border-bottom:1px solid #ddd;
+
+    padding:10px 15px;
+
+    font-size:14px;
+
+}
+
+.contact-info p{
+
+    margin:8px 0;
+
+}

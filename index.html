@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="contactModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeContact()">&times;</span>
+
+        <h2>📞 Contact Us</h2>
+
+        <p><strong>📱 Phone:</strong> +250 799603228</p>
+
+        <p><strong>💬 WhatsApp:</strong> +250 739469128</p>
+
+        <p><strong>📧 Email:</strong>mbonimpa1reimy@gmail.com</p>
+
+        <p><strong>📍 Address:</strong> Kigali, Rwanda</p>
+
+        <p><strong>🌐 Website:</strong> www.mreimy1gmfpp.com</p>
+
+    </div>
+
+</div>
+    <!--DARK MODE-->
+<div class="topbar">
+<button id="menuBtn">☰</button>
+    <div class="menu">
+
+        <div id="menuList" class="menu-content">
+
+            <a href="#">👤 My Profile</a>
+
+            <a href="#">⚙️ Settings</a>
+
+            <a href="#" onclick="toggleTheme()">
+                🌙 Dark Mode
+            </a>
+
+            <a href="#">🔔 Notifications</a>
+
+            <a href="#">🔒 Change Password</a>
+
+           <a href="#" onclick="openContact()">📞 Contact Us</a>
+
+            <div class="contact-info">
+                <p>📱 +250 799603228</p>
+                <p>☎️ +250 739469128</p>
+                <p>📧 mbonimpa1reimy@gmail.com</p>
+            </div>
+
+            <a href="#" onclick="logout()">
+                🚪 Logout
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="topbar">
+
+    <h1>Mreimy1 Gmfpp E-Commerce</h1>
+
+    <div class="menu">
+
+        <button onclick="openMenu()">☰</button>
+
+        <div id="menuList" class="menu-content">
+
+            <a href="#">👤 Profile</a>
+
+            <a href="#" onclick="toggleTheme()">🌙 Dark Mode</a>
+
+            <a href="#" onclick="logout()">🚪 Logout</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<h3>
+🛒 Cart:
+<span id="cartCount">0</span>
+items
+</h3>
+<input
+type="text"
+id="search"
+placeholder="Search product..."
+onkeyup="searchProduct()">
+<select onchange="filterCategory(this.value)">
+
+<option value="All">
+All
+</option>
+
+<option value="Laptop">
+Laptop
+</option>
+
+<option value="Phone">
+Phone
+</option>
+
+<option value="Accessories">
+Accessories
+</option>
+
+</select>
+
+<div id="products"></div>
+
+<h2>Shopping Cart</h2>
+
+<ul id="cart"></ul>
+
+<h2>Total: $<span id="total">0</span></h2>
+<h2 id="welcome"></h2>
+
+<button onclick="logout()">Logout</button>
+<button onclick="clearCart()">
+Clear Cart
+</button>
+<button onclick="increaseQuantity(...)">+</button>
+<button onclick="decreaseQuantity(...)">-</button>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
